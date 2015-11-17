@@ -8,6 +8,7 @@ nose
 pylint
 pep8
 pep257
+uwsgi
 # alignak - used by alignak_backend_import but not installed by its requirements!
 -e git+git://github.com/Alignak-monitoring/alignak.git@develop#egg=alignak
 # alignak_backend
