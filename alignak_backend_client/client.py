@@ -26,7 +26,7 @@
 import json
 import traceback
 import logging
-from logging import getLogger, DEBUG, WARNING
+from logging import getLogger, WARNING
 
 import math
 import multiprocessing
