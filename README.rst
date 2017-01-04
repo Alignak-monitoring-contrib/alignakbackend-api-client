@@ -25,7 +25,11 @@ Alignak Backend client
 
 .. image:: https://badge.fury.io/py/alignak_backend.svg
     :target: https://badge.fury.io/py/alignak_backend_client
-    :alt: Last PyPi version
+    :alt: Most recent PyPi version
+
+.. image:: https://img.shields.io/badge/IRC-%23alignak-1e72ff.svg?style=flat
+    :target: http://webchat.freenode.net/?channels=%23alignak
+    :alt: Join the chat #alignak on freenode.net
 
 .. image:: https://img.shields.io/badge/License-AGPL%20v3-blue.svg
     :target: http://www.gnu.org/licenses/agpl-3.0
@@ -40,6 +44,27 @@ The Backend client class is commented and `an online documentation <http://align
 The `Alignak backend documentation <http://alignak-backend.readthedocs.io/>`_ will also be really helpful to you ;)
 
 
+Installation
+------------
+
+From PyPI
+~~~~~~~~~
+To install the package from PyPI:
+::
+
+   sudo pip install alignak-backend-client
+
+
+From source files
+~~~~~~~~~~~~~~~~~
+To install the package from the source files:
+::
+
+   git clone https://github.com/Alignak-monitoring-contrib/alignak-backend-client
+   cd alignak-backend-client
+   sudo pip install .
+
+
 Release strategy
 ----------------
 
@@ -52,4 +77,4 @@ client with a 0.4.x version of the Backend.
 Bugs, issues and contributing
 -----------------------------
 
-Please report any issue using the project `issues page <https://github.com/Alignak-monitoring-contrib/alignak-backend-client/issues>`_.
+Contributions to this project are welcome and encouraged ... `issues in the project repository <https://github.com/alignak-monitoring-contrib/alignak-backend-client/issues>`_ are the common way to raise an information.

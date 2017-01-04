@@ -10,8 +10,8 @@ try:
 except:
     sys.exit("Error: missing python-setuptools library")
 
-from alignak_backend_client import __application__, __version__, __copyright__, __author__
-from alignak_backend_client import __releasenotes__, __license__, __doc_url__, __git_url__
+from alignak_backend_client import __version__, __author__, __author_email__
+from alignak_backend_client import __license__, __git_url__, __classifiers__
 from alignak_backend_client import __name__ as __pkg_name__
 
 package = import_module('alignak_backend_client')
@@ -24,28 +24,24 @@ setup(
 
     # metadata for upload to PyPI
     author=__author__,
-    author_email="david.durieux@alignak.net",
+    author_email=__author_email__,
     keywords="alignak monitoring backend",
     url=__git_url__,
     description=package.__doc__.strip(),
     long_description=open('README.rst').read(),
 
+    classifiers = __classifiers__,
+
     zip_safe=False,
 
     packages=find_packages(),
-    include_package_data=True,
 
+    # Where to install distributed files
+    # data_files = [],
+
+    # Dependencies (if some) ...
     install_requires=['requests', 'future'],
 
-    classifiers = [
-        'Development Status :: 5 - Production/Stable',
-        'Environment :: Console',
-        'Intended Audience :: Developers',
-        'Intended Audience :: System Administrators',
-        'License :: OSI Approved :: GNU General Public License v3 (GPLv3)',
-        'Natural Language :: English',
-        'Programming Language :: Python',
-        'Topic :: System :: Monitoring',
-        'Topic :: System :: Systems Administration'
-    ]
+    # Entry points (if some) ...
+    # entry_points = {}
 )
